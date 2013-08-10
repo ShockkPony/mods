@@ -1,0 +1,41 @@
+{
+  "name": "mods",
+  "version": "0.0.0",
+  "description": "mods is an evented module system for Node.js.",
+  "author": {
+    "name": "Shockk",
+    "email": "shokku.ra@gmail.com",
+    "url": "https://github.com/ShockkPony/"
+  },
+  "contributors": [
+    {
+      "name": "Shockk",
+      "email": "shokku.ra@gmail.com",
+      "url": "https://github.com/ShockkPony/"
+    }
+  ],
+  "keywords": [
+    "mods",
+    "mod",
+    "modules",
+    "module",
+    "system",
+    "sync",
+    "synchronous",
+    "async",
+    "asynchronous",
+    "extensible",
+    "reload",
+    "load",
+    "unload"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShockkPony/mods.git"
+  },
+  "license": "BSD",
+  "main": "index",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
