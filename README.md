@@ -21,7 +21,9 @@ var bye = require('./bye');
 mods.load(hello);
 mods.load(bye);
 
-mods.fire('$test');
+var result = mods.fire('$test');
+
+console.log(result);
 ```
 
 ##### hello.js
@@ -33,6 +35,8 @@ exports.$test = function(mods)
 
 	// this will fire `hello$test` which is not hooked so nothing will happen
 	mods.fire('test');
+
+	return 'result from hello.js';
 }
 ```
 
@@ -44,12 +48,13 @@ exports.$test = function(mods)
 	console.log('bye --> $test');
 
 	// this will fire `bye$test` which is hooked so it will be called
-	mods.fire('test');
+	return mods.fire('test');
 }
 
 exports.bye$test = function()
 {
 	console.log('bye --> bye$test');
+	return 'result from bye$test in bye.js';
 }
 ```
 
