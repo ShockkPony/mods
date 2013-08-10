@@ -1,6 +1,6 @@
 {
   "name": "mods",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "mods is an evented module system for Node.js.",
   "author": {
     "name": "Shockk",
