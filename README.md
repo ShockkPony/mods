@@ -29,12 +29,12 @@ console.log(result);
 ##### hello.js
 ```javascript
 exports.name = 'hello';
-exports.$test = function(mods)
+exports.$test = function()
 {
 	console.log('hello --> $test');
 
 	// this will fire `hello$test` which is not hooked so nothing will happen
-	mods.fire('test');
+	this.mods.fire('test');
 
 	return 'result from hello.js';
 }
@@ -43,12 +43,12 @@ exports.$test = function(mods)
 ##### bye.js
 ```javascript
 exports.name = 'bye';
-exports.$test = function(mods)
+exports.$test = function()
 {
 	console.log('bye --> $test');
 
 	// this will fire `bye$test` which is hooked so it will be called
-	return mods.fire('test');
+	return this.mods.fire('test');
 }
 
 exports.bye$test = function()
