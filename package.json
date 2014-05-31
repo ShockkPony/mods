@@ -5,13 +5,13 @@
   "author": {
     "name": "Shockk",
     "email": "shokku.ra@gmail.com",
-    "url": "https://github.com/ShockkPony/"
+    "url": "https://github.com/shokkolate"
   },
   "contributors": [
     {
       "name": "Shockk",
       "email": "shokku.ra@gmail.com",
-      "url": "https://github.com/ShockkPony/"
+      "url": "https://github.com/shockkolate"
     }
   ],
   "keywords": [
@@ -31,9 +31,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShockkPony/mods.git"
+    "url": "https://github.com/shockkolate/mods.git"
   },
-  "license": "BSD",
+  "license": "Apache-2.0",
   "main": "index",
   "engines": {
     "node": ">=0.8"
